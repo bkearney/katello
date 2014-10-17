@@ -10,6 +10,9 @@
 # have received a copy of GPLv2 along with this software; if not, see
 # http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt.
 
+# Adding this for the foreman_hooks plugin
+require "active_model/forbidden_attributes_protection"
+
 module Katello
   class Model < ActiveRecord::Base
     include ActiveModel::ForbiddenAttributesProtection
